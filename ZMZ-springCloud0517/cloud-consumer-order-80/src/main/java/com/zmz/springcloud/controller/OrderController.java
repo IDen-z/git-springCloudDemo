@@ -7,7 +7,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -15,7 +14,10 @@ import org.springframework.web.client.RestTemplate;
 @Slf4j
 public class OrderController {
 
-    public static final String PAYMENT_URL="http://localhost:8001";
+    /*单机版写法*/
+//    public static final String PAYMENT_URL="http://localhost:8001";
+    /*集群版本*/
+    public static final String PAYMENT_URL="http://CLOUD-PROVIDER-PAYMENT";
 
     @Autowired
     private RestTemplate restTemplate;
