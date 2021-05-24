@@ -1,16 +1,16 @@
-package com.zmz.myrule;
+package com.zmz.springcloud.config;
 
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RandomRule;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class MySelfRule
 {
     @Bean
-    public IRule myRule()
+    public IRule getRule()
     {
-        return new RandomRule();//定义为随机
+        return new RandomRule();
     }
 }

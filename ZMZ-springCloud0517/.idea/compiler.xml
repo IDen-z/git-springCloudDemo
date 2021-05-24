@@ -13,7 +13,12 @@
         <module name="cloud-provider-payment-8001" />
         <module name="cloud-eureka-server-7002" />
         <module name="cloud-eureka-server-7001" />
+        <module name="cloud-provider-hystrix-payment-8001" />
+        <module name="cloud-consumer-feign-80" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-eureka-server-single-7001" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
